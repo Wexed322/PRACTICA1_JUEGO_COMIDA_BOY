@@ -32,7 +32,7 @@ public class FallManager : MonoBehaviour
     void CreateObject() 
     {
         float range = Random.Range(rangeIns.x, rangeIns.y);
-        Instantiate(enemies[Random.Range(0,enemies.Count)], new Vector3(transform.position.x + range, transform.position.y, 0), Quaternion.identity);
+        Instantiate(enemies[Random.Range(0,enemies.Count)], new Vector3(transform.position.x + range, transform.position.y, -5), Quaternion.identity);
         coolDownSpawn = (int)Random.Range(rangeCooldown.x, rangeCooldown.y);
     }
 }
